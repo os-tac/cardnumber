@@ -1,0 +1,8 @@
+<template>
+    <lightning-layout multiple-rows>        
+            <div class="slds-col slds-size_1-of-4"><lightning-input data-fieldname="1" pattern="[0-9]{4}" onchange={onNumberChange} value={firstValue} maxlength="4"></lightning-input></div>
+            <div class="slds-col slds-size_1-of-4"><lightning-input data-fieldname="2" pattern="[0-9]{4}" onchange={onNumberChange} value={secondValue} maxlength="4"></lightning-input></div>
+            <div class="slds-col slds-size_1-of-4"><lightning-input data-fieldname="3" pattern="[0-9]{4}" onchange={onNumberChange} value={thirdValue} maxlength="4"></lightning-input></div>
+            <div class="slds-col slds-size_1-of-4"><lightning-input data-fieldname="4" pattern="[0-9]{4}" onchange={onNumberChange} value={fourthValue} maxlength="4"></lightning-input></div>
+    </lightning-layout>
+</template>
