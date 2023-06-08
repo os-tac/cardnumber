@@ -9,7 +9,6 @@ export default class CreditCardNumber extends LightningElement {
         let enteredLoc = event.currentTarget.getAttribute("data-fieldname");
         if (enteredNumber.length == 4) {
             this.cardNumber += event.currentTarget.value;
-            console.log(this.cardNumber);
             let nextBox = Number(enteredLoc)+1;
             if (nextBox == 5) {
                 this.dispatchEvent(new FlowAttributeChangeEvent('cardNumber', this.cardNumber));
